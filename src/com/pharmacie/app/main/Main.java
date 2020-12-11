@@ -1,4 +1,10 @@
+package com.pharmacie.app.main;
+
 import java.util.Scanner;
+
+import com.pharmacie.app.models.Client;
+import com.pharmacie.app.models.Medicament;
+import com.pharmacie.app.models.Pharmacier;
 
 public class Main {
 	public static void main (String[] args) {
@@ -8,7 +14,7 @@ public class Main {
 		do {
 			System.out.println("#### Menu #####");
 			System.out.println("1 - Ajouter Nouveau Pharmacier");
-			System.out.println("2 - Afifcher tous les Pharmaciers");
+			System.out.println("2 - Afficher tous les Pharmaciers");
 			System.out.println("3 - Modifier Un Pharmacier");
 			System.out.println("4 - Supprimer Un Pharmacier");
 			System.out.println("5 - Ajouter Nouveau Medicament");
@@ -21,7 +27,7 @@ public class Main {
 			System.out.println("12 - Modifier Un Client");
 			System.out.println("13 - Supprimer Un Pharmacier");
 			System.out.println("14 - Recherche Un Pharmacier par l'index");
-			System.out.println("15 - Clinet fideles");
+			System.out.println("15 - Clients fideles");
 			System.out.println("16 - Exit");
 			
 			System.out.println("Enter un nombre :");
@@ -80,3 +86,4 @@ public class Main {
 		} while (input != 16);
 	}
 }
+

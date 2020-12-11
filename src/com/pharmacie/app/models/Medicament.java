@@ -1,3 +1,5 @@
+package com.pharmacie.app.models;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -128,3 +130,4 @@ public class Medicament {
 		System.out.println(listObj.get(searchkey));
 	}
 }
+

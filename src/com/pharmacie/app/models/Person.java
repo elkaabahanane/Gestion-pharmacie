@@ -1,41 +1,42 @@
-import java.util.ArrayList;
+package com.pharmacie.app.models;
 
 public class Person {
 	private int identifiant;
-	private static String nomComplet;
-	private static String phone;
-	private static String email;
+	private String nomComplet;
+	private String phone;
+	private String email;
 	
-
+	public Person (int identifiant,String nomComplet,String phone,String email) {
+		this.identifiant = identifiant;
+		this.nomComplet = nomComplet;
+		this.phone = phone;
+		this.email = email;
+	}
+	
 	public int getIdentifiant() {
 		return identifiant;
 	}
 	public void setIdentifiant(int identifiant) {
 		this.identifiant = identifiant;
 	}
-	public static String getNomComplet() {
+	public String getNomComplet() {
 		return nomComplet;
 	}
 	public void setNomComplet(String nomComplet) {
 		this.nomComplet = nomComplet;
 	}
-	public static String getNumeroTelephone() {
+	public String getNumeroTelephone() {
 		return phone;
 	}
 	public void setNumeroTelephone(String numeroTelephone) {
 		this.phone = numeroTelephone;
 	}
-	public static String getEmail() {
+	public String getEmail() {
 		return email;
 	}
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	public Person () {
-
-	}
-	
 	
 	@Override
 	public String toString() {
@@ -43,3 +44,4 @@ public class Person {
 	}
 	
 }
+
